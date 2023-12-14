@@ -1,0 +1,27 @@
+#Student Name = Jason Daly
+#num1 = 9
+#num2 = 5
+name = input("What is your name?") #(ii)user is asked for their name
+
+print("Hello", name , ",Welcome to the addition and subtraction calculator.")#(iii)
+#(i)this calculator can only add and subtract
+
+num1 = int(input("Please enter your first number"))#(iv)user is asked their first number
+num2 = int(input("Please enter your second number"))#(iv)user is asked their second number
+
+print('Do you want me to (a)dd or (s)ubtract?')#user is asked for either addition or subtraction
+choice = input()
+#options == [ a, s, A, S]
+
+if choice == 'a':
+    print ( num1 , "+" , num2 , "=" ,(num1 + num2))#(v)prints whole sum not just answer
+elif choice == 's':
+    print ( num1 , "-" , num2 , "=" ,(num1 - num2))#(v)
+elif choice == 'S':
+    print ( num1 , "-" , num2 , "=" ,(num1 - num2))#(vi
+elif choice == 'A':
+    print ( num1 , "+" , num2 , "=" ,(num1 + num2))#(vi)
+else:
+    print("invalid option")#(vii)prints invalid option
+    #while choice != options:
+        #print("Do you want me to (a)dd or (s)ubtract?'")      (viii)
