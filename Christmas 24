@@ -1,0 +1,46 @@
+#Question 1
+# Name: Jason Daly
+
+from random import choice
+
+fruits = ['apple' , 'cherry' , 'orange']
+
+random_fruit_1 = choice(fruits)
+random_fruit_2 = choice(fruits)#(ii) creating two new variables
+random_fruit_3 = choice(fruits)
+
+print("Random fruit 1: ", random_fruit_1) #(i) printing the random fruit assigned to random_fruit_1
+print("Random fruit 2: ", random_fruit_2)#(ii) printing two new variables
+print("Random fruit 3: ", random_fruit_3)
+
+print("First fruit is" , random_fruit_1)#(iii) stating the first random fruit
+if random_fruit_1 == random_fruit_2:
+    print("First pair is a match")#(iv) stating the first pair is a match if they are the same fruit
+    if random_fruit_1 == 'cherry':
+        print("First pair are cherries")#(v) if first two are cherries it prints accordingly
+    print("Matching pair")
+elif random_fruit_1 == random_fruit_3:#(vi) prints a matching pair if any two are the same
+    print("Matching pair")
+elif random_fruit_2 == random_fruit_3:#(vi)
+    print("Matching pair")
+
+fruit_loop = []
+for fruit in range (1, 101): #(vii) looping 100 times
+    randomFruit = choice(fruits)
+    fruit_loop = [fruit_loop.append(randomFruit)]
+
+num_cherry = fruit_loop.count('cherry')
+num_apple = fruit_loop.count('apple')
+num_orange = fruit_loop.count('orange')
+print("apple" ,num_apple)
+print("cherry" , num_cherry)#(vii) printing number of each fruit generated
+print("orange" , num_orange)
+
+#question 2
+#name: jason daly
+
+print("Split bill calculator")
+billTotal = float(input("How much is the bill?: "))
+people = int(input("How many people?: "))# amount of people
+owed = billTotal/people# formula for method
+print("You each owe: " , round(owed , 2))#how much is owed
